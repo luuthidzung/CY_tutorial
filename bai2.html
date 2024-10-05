@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid tròn 4 item </title>
+<style>
+  .circle {
+    display: grid;
+    grid-template-areas: 
+      ". top ."
+      "left center right"
+      ". bottom .";
+    justify-items: center;
+    align-items: center;
+    margin-top: 150px;
+    width: 481px;
+    height: 481px;
+    border: 31px solid rgba(242, 153, 74, 1);
+    border-radius: 100%;
+    position: relative;
+  }
+  .item {
+    border-radius: 50px;
+    background: rgba(235, 87, 87, 1);
+    width: 96px;
+    height: 184px;
+  }
+  .top {
+    grid-area: top;
+    margin-bottom: -50px;
+  }
+  .left {
+    grid-area: left;
+    width: 184px;
+    height: 96px;
+    margin-right: -170px ;
+  }
+  .bottom {
+    grid-area: bottom;
+    margin-top: -50px;
+  }
+  .right {
+    grid-area: right;
+    width: 184px;
+    height: 96px;
+    margin-left: -170px ;
+  }
+  .center {
+    grid-area: center;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="circle">
+        <div class="item top"></div>
+        <div class="item left"></div>
+        <div class="item bottom"></div>
+        <div class="item right"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,392 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ecom</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap" rel="stylesheet">
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 236px;
+    margin-left:-100px;
+    margin-right: 110px;
+}
+
+.header_navbar {
+    width: 100%;
+    margin-right: -339px;
+}
+
+.header_navbar>ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header_navbar>ul>li {
+    font-family: "Unica One", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    list-style-type: none;
+    margin-right: 76px;
+    text-transform: uppercase;
+    margin-right: 76px;
+}
+.brown {
+    background: #B6A179;
+}
+
+.black {
+    background: #272425;
+}
+
+.blue {
+    background: #6389CB;
+}
+
+.yellow {
+    background: #F2C758;
+}
+
+.icon {
+    width: 236px;
+    display: flex;
+    align-items: center;
+    margin-left:452px ;
+    margin-right: -90px;
+    
+}
+
+.icon img {
+    width: 36px; 
+    height: 36px;
+}
+
+.icon-cart {
+    width: 36px; 
+    height: 36px;
+}
+
+.count-wrapper {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-left: 36px;
+}
+
+.cart {
+    position: absolute;
+    background: red;
+    font-size: 14px; 
+    color: white;
+    width: 20px; 
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -6px; 
+    right: -6px;
+}
+
+.detail {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between ;
+    position: relative;
+}
+
+.left {
+    margin-left: 72px;
+    width: 50%;
+}
+
+.left-heading {
+    font-family: "Unica One", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.left-size-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.left-size-item {
+    font-family: "HelveticaNeueCyr", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgb(224, 217, 217);
+    margin:  28px 20px 0 0;
+}
+
+.left-color {
+    margin-top: 55px;
+}
+
+.left-color-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.left-color-item {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    margin:  28px 20px 0 0;
+}
+
+.right {
+    width: 488px;
+}
+
+.right-category-name {
+    font-family: "Helvetica", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+
+}
+
+.right-name {
+    font-family: "Unica One", sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 85px;
+    text-transform: uppercase;
+   
+    margin-bottom: 24px;
+}
+
+.right-description {
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #a09a9a;
+}
+
+.content-img {
+    position: absolute;
+    width: 1104px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+
+.content-elip {
+    position: absolute;
+    width: 1104px;
+    top: 190%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.last-text {
+    margin-top: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+}
+
+.prev {
+    margin-right: 56px;
+}
+
+.text-step {
+    font-family: "Unica One", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap; 
+}
+
+
+.icon-play{
+    margin-right: 24px;
+    width: 56px;
+    height:56px;
+}
+
+.play {
+    display: flex;
+    width: 85px;
+    height: 24px;
+    font-size: 20px;
+    align-items: center;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    font-family: "Unica One", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+
+.scroll {
+    position: absolute;
+    top: 70%;
+    left: -100px;
+    z-index: 20;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Unica One", sans-serif;
+    rotate: 270deg;
+}
+
+
+.social {
+    position: absolute;
+    top: 70%;
+    right: 0;
+    z-index: 20;
+    width: 28px; 
+    height: 132px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-style {
+    width: 100%; 
+    height: auto;
+}
+
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <header class="header">
+                <div class="logo">
+                    <img src="image/image.png" alt="">
+                </div>
+                <div class="header_navbar">
+                    <ul>
+                        <li>New Releases</li>
+                        <li>Men</li>
+                        <li>Woman</li>
+                        <li>Haps Stories</li>
+                    </ul>
+                </div>
+                <div class="icon">
+                    <img src="image/user.png" alt="">
+                    <div class="count-wrapper">
+                        <img class="icon-cart" src="image/cart.png" alt="">
+                        <span class="cart">2</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="detail">
+                <div class="left">
+                    <div class="left-size">
+                        <div class="left-heading">Select Size (us)</div>
+                        <ul class="left-size-list">
+                            <li class="left-size-item">8</li>
+                            <li class="left-size-item">8.5</li>
+                            <li class="left-size-item">9</li>
+                            <li class="left-size-item">9.5</li>
+                            <li class="left-size-item">10</li>
+                        </ul>
+                    </div>
+                    <div class="left-color">
+                        <div class="left-heading">Select Color</div>
+                        <ul class="left-color-list">
+                            <li class="left-color-item brown"></li>
+                            <li class="left-color-item black"></li>
+                            <li class="left-color-item blue"></li>
+                            <li class="left-color-item yellow"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-category-name">MEN'S SANDALS</div>
+                    <div class="right-name">HUNK - Toffee</div>
+                    <div class="right-description">Add a spring to your step with this elegant and sleek pair of footwear! With its heavily padded ankle straps for secure footing and matted steel buckles that add flair, support and style go hand in hand with these hunk sandals</div>
+                </div>
+                <img src="image/product.png" class="content-img" alt="">
+                <img src="image/oval.png" class="content-elip" alt="">
+            </div>
+
+            <div class="last-text">
+                <div class="step">
+                    <div class="prev">
+                        <p class="text-step">PREV</p>
+                        <img src="image/left.png" alt="">
+                    </div>
+                    <div class="next">
+                        <p class="text-step">Next</p>
+                        <img src="image/right.png" alt="">
+                    </div>
+                </div>
+                <div class="play">
+                    <img src="image/next.png" class="icon-play" alt="no img">
+                    <div class="text-step">PLAY VIDEO</div>
+                </div>
+                <div class="price">add to cart — ₹1599</div>
+            </div>
+
+            <div class="scroll">
+                <p>Scroll down</p>
+            </div>
+            <div class="social">
+                <img class="img-style" src="image/social.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
