@@ -1,0 +1,23 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chicken {
+    width: 150px; 
+    transition: transform 0.1s ease; 
+    margin: 10px;
+    border-radius: 10px;
+}
+.chicken:hover{
+    transform: scale(1.1)
+}
