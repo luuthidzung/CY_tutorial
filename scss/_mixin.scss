@@ -1,0 +1,22 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin text-style($font-size, $color, $weight: 400) {
+    font-family: Rubik;
+    font-size: $font-size;
+    color: $color;
+    font-weight: $weight;
+}
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 50px;
+}
