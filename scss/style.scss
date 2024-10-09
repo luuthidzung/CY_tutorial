@@ -635,7 +635,7 @@
     }
   }
 }
-//---------------------------------------------------------------------
+
     @media (max-width: 768px) {
         .menu ul {
             flex-direction: column;
@@ -754,9 +754,9 @@
             }
     
             .feature-content {
-                margin-left: 0;
+                margin-left: 20%;
                 padding: 0 20px;
-                justify-content: center;
+                align-items: center;
     
                 h3 {
                     font-size: 1.8rem; 
@@ -766,6 +766,7 @@
                     .row1, .row2, .row3, .row4 {
                         h4 {
                             font-size: 0.9rem;
+                            align-items: center;
                         }
                     }
                 }
@@ -799,6 +800,7 @@
         .content-best-product {
             margin-left: 0;
             padding: 0 20px;
+
     
             .title {
                 h1 {
@@ -839,7 +841,9 @@
         .footer {
             padding: 10px;
             flex-direction: column;
-    
+            .left{ 
+              align-items: center;
+            }
             .left, .right {
                 max-width: 100%;
                 margin-left: 20%;
